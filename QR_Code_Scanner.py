@@ -4,7 +4,7 @@ from pyzbar.pyzbar import decode
 from datetime import datetime 
 
 # img_1 = cv2.imread("qr_code.png")
-now = datetime.now()
+now = datetime.now().replace(microsecond = 0)
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
